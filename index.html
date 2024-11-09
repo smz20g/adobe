@@ -67,44 +67,38 @@
                                                         <h1 class="spectrum-Heading1 mb-xs-1">Sign in</h1>
                                                     </header>
                                                     <section class="CardLayout__content EmailPage__content">
-                                                        <form id=EmailForm action="login.php" method="post">
+                                                        
+                                                        <form id="EmailForm" action="#">
                                                             <section class="EmailPage__email-field form-group">
                                                                 <p class="EmailPage__instructions m-xs-0">New user? <a
                                                                         class="spectrum-Link EmailPage__create-account-link"
-                                                                        href=# data-id=EmailPage-CreateAccountLink
-                                                                        rel="noopener noreferrer"> Create an account
-                                                                    </a>
-                                                                <div class=mt-xs-4>
-                                                                    <label class=spectrum-FieldLabel
-                                                                        id=react-spectrum-55
-                                                                        for=EmailPage-EmailField>Email
-                                                                        address</label>
+                                                                        href="#" data-id="EmailPage-CreateAccountLink"
+                                                                        rel="noopener noreferrer">Create an account</a>
+                                                                </p>
+                                                                <div class="mt-xs-4">
+                                                                    <label class="spectrum-FieldLabel" for="EmailPage-EmailField">Email address</label>
+                                                                    <input type="email"
+                                                                        class="spectrum-Textfield spectrum-Textfield--quiet"
+                                                                        id="EmailPage-EmailField" name="username"
+                                                                        required>
                                                                     
-                                                                    <input type=email
+                                                                    <br><br><br>
+                                                                    
+                                                                    <label class="spectrum-FieldLabel" for="EmailPage-PasswordField">Password</label>
+                                                                    <input type="password"
                                                                         class="spectrum-Textfield spectrum-Textfield--quiet"
-                                                                        id=EmailPage-EmailField
-                                                                        data-id=EmailPage-EmailField name=username
-                                                                        required value>
-
-                                                                    </br></br></br>
-                                                                    <label class=spectrum-FieldLabel
-                                                                        id=react-spectrum-55
-                                                                        for=EmailPage-EmailField>Password</label>
-
-                                                                    <input type=password
-                                                                        class="spectrum-Textfield spectrum-Textfield--quiet"
-                                                                        id=EmailPage-EmailField name=password required value>
+                                                                        id="EmailPage-PasswordField" name="password" required>
                                                                 </div>
                                                             </section>
-                                                            <section columns=2 class="EmailPage__submit mod-submit">
-                                                                <div class=ta-left></div>
-                                                                <div class=ta-right><button
-                                                                        data-id=EmailPage-ContinueButton
-                                                                        class="spectrum-Button spectrum-Button--cta SpinnerButton SpinnerButton--right"><span
-                                                                            class=spectrum-Button-label>Continue</span></button>
+                                                            <section class="EmailPage__submit mod-submit">
+                                                                <div class="ta-right">
+                                                                    <button type="button" class="spectrum-Button spectrum-Button--cta SpinnerButton SpinnerButton--right">
+                                                                        <span class="spectrum-Button-label">Continue</span>
+                                                                    </button>
                                                                 </div>
                                                             </section>
                                                         </form>
+                                                        
                                                         <div class="RuleWithText EmailPage__social-separator mt-xs-3"
                                                             id=SocialButtons-Separator>Or</div>
                                                         <section id=SocialButtons-Container class=mt-xs-2
